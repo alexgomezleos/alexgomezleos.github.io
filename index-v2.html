@@ -25,11 +25,10 @@
             margin-bottom: 30px;
         }
         header img {
-            float: left;
-            margin-right: 20px;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            max-width: 100%;  /* Image width will not exceed its container's width */
+            height: auto;     /* Height will adjust automatically to maintain the aspect ratio */
+            margin-right: 20px; /* Space between image and text */
+            border-radius: 50%; /* Keep the circular look */
         }
         header h1 {
             font-size: 2em;
