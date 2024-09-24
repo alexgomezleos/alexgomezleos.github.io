@@ -42,7 +42,7 @@
             /* font-size: 2em; */
         }
         .profile-text p {
-            margin-top: 5px;
+            margin-top: 10px;
             /* font-size: 1.1em; */
         }
         section {
@@ -54,6 +54,44 @@
         }
         a:hover {
             text-decoration: underline;
+        }
+        /* Responsive design for mobile devices */
+    @media (max-width: 768px) {
+        body {
+            font-size: 0.9em; /* Slightly smaller font on mobile */
+            line-height: 1.5; /* Tighter line spacing */
+        }
+
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 15px; /* Reduce space below headers */
+        }
+
+        h2 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px; /* Reduce space below paragraphs */
+        }
+
+        .profile {
+            grid-template-columns: 1fr; /* Single column layout */
+            grid-gap: 10px;
+        }
+
+        .profile img {
+            max-width: 100%; /* Image scales down */
+        }
+
+        .container {
+            padding: 10px; /* Reduce padding for smaller screens */
+        }
+
+        section {
+            margin-bottom: 20px; /* Less space between sections */
+            padding: 10px;
         }
     </style>
 </head>
