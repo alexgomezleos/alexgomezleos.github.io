@@ -16,33 +16,39 @@
             color: #333;
         }
         .container {
-            max-width: 900px;
-            margin: 40px auto;
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
         }
-        header {
-            text-align: left;
+        .profile {
+            display: grid;
+            grid-template-columns: 1fr 2fr; /* 1/3 of the width for the image, 2/3 for the text */
+            grid-gap: 30px;
+            align-items: start; /* Aligns the image and text at the top */
             margin-bottom: 30px;
         }
-        header img {
-            max-width: 100%;  /* Image width will not exceed its container's width */
-            height: auto;     /* Height will adjust automatically to maintain the aspect ratio */
-            margin-right: 20px; /* Space between image and text */
-            border-radius: 50%; /* Keep the circular look */
+        .profile img {
+            width: 100%; /* Image will take up the entire left-hand column */
+            height: auto;
+            border-radius: 10px; /* Slight border radius for a cleaner look */
         }
-        header h1 {
-            font-size: 2em;
+        .profile-text {
+            display: flex;
+            flex-direction: column; /* Stacks text vertically */
+        }
+        .profile-text h1 {
             margin: 0;
+            font-size: 2em;
         }
-        header p {
+        .profile-text p {
+            margin-top: 10px;
             font-size: 1.1em;
-            color: #000000;
         }
         section {
             margin-bottom: 30px;
         }
         a {
-            color: #029107;
+            color: #0073e6;
             text-decoration: none;
         }
         a:hover {
@@ -53,15 +59,15 @@
 <body>
 
 <div class="container">
-    <header>
-        <img src="IMG_0483.jpg" alt="[Your Name]"> <!-- Replace with your image -->
-        <div class="intro-text">
+    <div class="profile">
+        <img src="your-image.jpg" alt="[Your Name]"> <!-- Replace with your image -->
+        <div class="profile-text">
             <h1>[Your Name]</h1>
             <p>[Pronouns] | [Email Address]</p>
             <p>I am a [Your Title/Position]. I study [Your Field/Interests]. My research focuses on [specific areas of study or work].</p>
             <p>Previously, I was part of [Previous Institution/Group], where I worked on [Brief description]. I completed my Ph.D. in [Field] at [University] under the supervision of [Advisor Name].</p>
         </div>
-    </header>
+    </div>
 
     <h2>Publications</h2>
     <ul>
